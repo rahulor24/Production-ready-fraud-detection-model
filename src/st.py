@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import openpyxl
 from main import RandForest
 import matplotlib.pyplot as plt
 from shap_rf import run_shap_random_forest
