@@ -6,25 +6,31 @@ This project builds an end-to-end machine learning pipeline to detect fraudulent
 [Streamlit UI](https://fraud-detection-supervised.streamlit.app/)
 
 ## 📁 Project Structure
+# 💳 Fraud Detection in Financial Transactions
+
+This project builds an end-to-end machine learning pipeline to detect fraudulent financial transactions using real-world banking data. It covers exploratory analysis, feature engineering, model training, interpretability, and deployment via a Streamlit app.
+
+## 📁 Project Structure
+
 .
--├── data/                     # Dataset (not committed if sensitive)
--│
--├── notebooks/                # Research & experimentation
--│   ├── 01_eda.ipynb           # Exploratory Data Analysis
--│   ├── 02_preprocessing.ipynb # Feature engineering & preprocessing
--│   ├── 03_baseline_modeling.ipynb
--│   ├── 04_advanced_modeling.ipynb
--│   └── catboost_info/         # CatBoost artifacts
--│
--├── src/                      # Production-ready code
--│   ├── main.py                # Model loading & inference logic
--│   ├── preprocessor.py        # Feature preprocessing pipeline
--│   ├── shap_rf.py             # SHAP explainability module (Random Forest)
--│   └── st.py                  # Streamlit application entry point
--│
--├── .gitignore
--├── requirements.txt           # Deployment-safe dependencies
--└── README.md
+├── data/                     # Dataset (not committed if sensitive)
+│
+├── notebooks/                # Research & experimentation
+│   ├── 01_eda.ipynb           # Exploratory Data Analysis
+│   ├── 02_preprocessing.ipynb # Feature engineering & preprocessing
+│   ├── 03_baseline_modeling.ipynb
+│   ├── 04_advanced_modeling.ipynb
+│   └── catboost_info/         # CatBoost artifacts
+│
+├── src/                      # Production-ready code
+│   ├── main.py                # Model loading & inference logic
+│   ├── preprocessor.py        # Feature preprocessing pipeline
+│   ├── shap_rf.py             # SHAP explainability module (Random Forest)
+│   └── st.py                  # Streamlit application entry point
+│
+├── .gitignore
+├── requirements.txt           # Deployment-safe dependencies
+└── README.md
 
 ## 🧠 Problem Statement
 
