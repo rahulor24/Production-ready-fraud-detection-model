@@ -33,11 +33,4 @@ def RandForest(df):
 
     cm = confusion_matrix(y_test,y_pred)
 
-    return train_f1_score, test_f1_score, cm
-
-
-train_f1, test_f1, cm = RandForest()
-
-print("Train F1:", train_f1)
-print("Test F1:", test_f1)
-print("Confusion Matrix:\n", cm)
+    return train_f1_score, test_f1_score, cm, rf, X_train, X_test
