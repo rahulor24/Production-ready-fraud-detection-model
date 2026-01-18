@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import pandas as pd
 from main import Classifier
 import matplotlib.pyplot as plt
@@ -9,7 +10,11 @@ tab1, tab2 = st.tabs(["Model Overview", "Live Prediction"])
 
 with tab1:
     st.header("Training Dataset")
-    df = pd.read_csv("/data/raw/fraud_transactions.csv")
+    # get the path relative to the current file (main.py)
+    BASE_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
+    csv_path = os.path.join(BASE_DIR, "fraud_transactions.csv")
+    df = pd.read_csv(csv_path)
+    # df = pd.read_csv("/data/raw/fraud_transactions.csv")
     st.dataframe(df)
 
     st.download_button(
