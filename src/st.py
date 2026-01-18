@@ -9,7 +9,7 @@ tab1, tab2 = st.tabs(["Model Overview", "Live Prediction"])
 
 with tab1:
     st.header("Training Dataset")
-    df = pd.read_csv("../data/raw/fraud_transactions.csv")
+    df = pd.read_csv("/data/raw/fraud_transactions.csv")
     st.dataframe(df)
 
     st.download_button(
