@@ -6,8 +6,13 @@ This project builds an end-to-end machine learning pipeline to detect fraudulent
 [Streamlit UI](https://fraud-detection-supervised.streamlit.app/)
 
 ## 📁 Data
-The dataset you need for above streamlit app is present in the directory given below
+You can download training dataset either from streamlit app or from directory given below
 - data/raw
+
+For prediction you can download live transaction data from directory given below
+- data/live
+- Use 'live_fraud_transactions.csv' for prediction
+- Use 'live_fraud_transactions with fraud_flag.csv' to cross-check predictions
 
 ## 🧠 Problem Statement
 
